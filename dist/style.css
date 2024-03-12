@@ -47,12 +47,6 @@ body {
   }
 }
 
-.content {
-  background-color: gold;
-  flex: 14;
-  padding: 20px;
-}
-
 .navbar {
   align-items: center;
   background-color: lightgray;
@@ -66,4 +60,91 @@ body {
     border: gray solid 1px;
     padding: 20px 40px;
   }
+}
+
+.content {
+  background-color: gold;
+  flex: 14;
+  padding: 20px;
+}
+
+/* .carousel {
+  background-color: aqua;
+  display: flex;
+  height: 90%;
+  width: 90%;
+
+  .button-left,
+  .button-right {
+    background-color: blanchedalmond;
+    flex: 1;
+    padding: 40px 0px;
+  }
+
+  .spacer {
+    flex: 3;
+  }
+
+  .cat-egg {
+    flex: 6
+  }
+
+  .logo {
+    display: none;
+    flex: 6;
+  }
+
+  .sad-pepe {
+    display: none;
+    flex: 6;
+  }
+
+  .shocked-emoji {
+    display: none;
+    flex: 6;
+  }
+
+  .surprised-pikachu {
+    display: none;
+    flex: 6;
+  }
+} */
+
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  transform: translateX(33.33%);
+}
+
+img {
+  width: 600px;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
 }
