@@ -3,3 +3,67 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.header {
+  background-color: greenyellow;
+  display: flex;
+  flex: 1;
+  padding: 20px;
+
+  div {
+    padding: 20px;
+  }
+
+  .button {
+    background-color: pink;
+    flex: 1;
+  }
+
+  .text {
+    flex: 13;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+}
+
+.content {
+  background-color: gold;
+  flex: 14;
+  padding: 20px;
+}
+
+.navbar {
+  align-items: center;
+  background-color: lightgray;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+
+  .navitem {
+    background-color: whitesmoke;
+    border: gray solid 1px;
+    padding: 20px 40px;
+  }
+}
